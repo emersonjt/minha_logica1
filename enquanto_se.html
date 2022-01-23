@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+}
+
+	function mostre(frase) {
+		document.write(frase);
+		pulaLinha();
+}
+var contar = 30;
+
+while(contar <= 40) {
+	if(contar == 33) {
+		contar = contar +1;
+	}
+	if(contar == 37) {
+		contar = contar +1;
+	}
+	else {
+        mostre(contar);
+	    contar = contar +1;
+    }
+	
+    }
+mostre("fim");
+</script> 

@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+var senhaCadastrada = "alura321";
+var loginCadastrado = "alura"
+var atualTenta = 1;
+var maxTenta = 3;
+
+while(atualTenta <= maxTenta) {
+    var login = prompt("digite seu login");
+    var senha = prompt("digite sua senha");
+    if(login == loginCadastrado && 
+        senha == senhaCadastrada) {
+        alert("bem vindo!!!");
+        atualTenta = maxTenta;
+    }   else {
+        if(atualTenta == 3) {
+        alert("fim das tentativas");
+        } else {
+            alert("tente novamente");
+        }
+    }   
+         atualTenta = atualTenta + 1;
+}
+
+
+</script>

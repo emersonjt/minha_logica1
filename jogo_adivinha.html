@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+}
+
+	function mostre(frase) {
+		document.write(frase);
+		pulaLinha();
+}
+var ateN = parseInt(prompt("até qual valor sera o numero sorteado?"));
+var numeroPensado = Math.round(Math.random()* ateN);
+console.log(numeroPensado)
+var chute = parseInt(prompt("Chute um numero: "));
+
+if(numeroPensado == chute) {
+	mostre("você acertou!!!");
+} else {
+	mostre("você errou... Tente novamente:")
+}
+if(numeroPensado > chute) {
+	mostre("O numero que chutou foi menor!")
+}
+if(numeroPensado < chute) {
+	mostre("O numero que chutou foi maior!")
+} 
+</script>
+
